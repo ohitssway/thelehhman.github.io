@@ -17,22 +17,22 @@ Let's start off with some combinatorics problems!
 Let's say we have an empty license plate that can be 5 characters long. We want to find out how many 5 character long licenses are possible if the first 2 characters are for uppercase letters (A-Z) and the other 3 are for digits (0-9). 
 
 <p align="center"> 
-    <img src="images/license-plates.PNG">
+    <img src="https://raw.githubusercontent.com/ohitssway/ohitssway.github.io/master/_posts/images/license-plates.PNG">
 </p>
 
 First, let's solve this assuming we can allow repeats.
 
 I like to think of these problems by looking at how many options are available at each "slot", in this case how many options there are for each spot in the license plate. Let the underscores represent the spots.
 
-                        _ _ _ _ _
+<center>__ __ __ __ __</center>
 
 In the first two spots, we can have any two uppercase letters of which there are 26. So far we have:
 
-                        26 26 _ _ _
+<center>26 26 __ __ __</center>
 
 And in other spots, we can have any digits. In each spot, there are 10 options.
 
-                        26 26 10 10 10
+<center>26 26 10 10 10</center>
 
 So if we multiply all these numbers we get a final answer of 672,000.
 
